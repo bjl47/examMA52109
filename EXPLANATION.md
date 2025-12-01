@@ -43,7 +43,7 @@ This is what the cluster_maker package does:
 - The evaluation.py has functions that computes the sum of squared distances (intertia) within the clusters, measures silheoutte score, and determines optimal number of clusters with the elbow curve function.
 
 4. Plotting and exporting:
-- Plotting_clustered.py visualises the clustering results 
+- Plotting_clustered.py visualises the clustering results. There is also a function to display an elbow plot, though it has not been called in the demo and test files.
 - Data_exporter.py saves the clustering results, including silehoutte score and inertia to csvs
 
 5. Interface:
