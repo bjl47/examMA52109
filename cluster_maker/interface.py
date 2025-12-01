@@ -22,7 +22,7 @@ def run_clustering(
     input_path: str,
     feature_cols: List[str],
     algorithm: str = "kmeans",
-    k: int = 3,
+    k: int = 2, # FIX: default set to 2 now, which is in line with demo file starting from k = 2, 3, 4, 5
     standardise: bool = True,
     output_path: Optional[str] = None,
     random_state: Optional[int] = None,

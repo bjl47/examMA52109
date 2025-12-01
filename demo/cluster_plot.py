@@ -52,14 +52,14 @@ def main(args: List[str]) -> None:
     # Main job: run clustering for k = 2, 3, 4, 5
     metrics_summary = []
 
-    for k in (2, 3, 4, 5):
+    for k in (2,3,4,5):
         print(f"\n=== Running k-means with k = {k} ===")
 
         result = run_clustering(
             input_path=input_path,
             feature_cols=feature_cols,
             algorithm="kmeans",
-            k = min(k, 3),
+            k = k,
             standardise=True,
             output_path=os.path.join(OUTPUT_DIR, f"{base}_clustered_k{k}.csv"),
             random_state=42,
